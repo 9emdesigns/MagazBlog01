@@ -1,0 +1,131 @@
+<body>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      max-width: 1900px;
+      gap: 20px;
+      margin: auto;
+    }
+
+    .sub {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: subgrid;
+      gap: 5px;
+      grid-column-end: auto;
+    }
+    .one {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .two {
+      border: 5px solid aqua;
+    }
+    .three {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .four {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .five {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .six {
+      border: 1px solid black;
+    }
+    .seven {
+      width: 193.5px;
+      height: 175px;
+    }
+    .eight {
+      width: 193.5px;
+      height: 175px;
+    }
+    .nine {
+      width: 193.5px;
+      height: 175px;
+    }
+    .ten {
+      width: 193.5px;
+      height: 175px;
+      background-color: aqua;
+    }
+    .eleven {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .twelve {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .thritheen {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .fourtheen {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .fiftheen {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .ninen {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .sevenn {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .eightn {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .tenn {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+    .elevenn {
+      border-right: 10px solid rgb(51, 241, 197);
+    }
+  </style>
+  <div class="wrapper">
+    <div class="one">
+      <img [src]="posts[posts.length - 1].img" alt="" />
+      <H2>{{ posts[posts.length - 1].title }}</H2>
+      <p>{{ posts[posts.length - 1].desc }}</p>
+      <p>
+        <i
+          >{{ posts[posts.length - 1].date }}&nbsp;{{
+            posts[posts.length - 1].author
+          }}</i
+        >
+      </p>
+    </div>
+    <div class="two">
+      <div class="sub">
+        <div class="seven">One</div>
+        <div class="eight">Two</div>
+        <div class="nine">Three</div>
+        <div class="ten">Four</div>
+      </div>
+    </div>
+    <div class="three">
+      <img [src]="posts[posts.length - 2].img" alt="" />
+      <H2>{{ posts[posts.length - 2].title }}</H2>
+      <p>{{ posts[posts.length - 2].desc }}</p>
+      <p>
+        <i
+          >{{ posts[posts.length - 2].date }}&nbsp;{{
+            posts[posts.length - 2].author
+          }}</i
+        >
+      </p>
+    </div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="sevenn">7</div>
+    <div class="eightn">8</div>
+    <div class="ninen">9</div>
+    <div class="tenn">10</div>
+    <div class="eleven">11</div>
+    <div class="twelve">12</div>
+    <div class="thritheen">13</div>
+    <div class="fourtheen">14</div>
+    <div class="fiftheen">15</div>
+    <div class="elevenn">16</div>
+  </div>
+</body>

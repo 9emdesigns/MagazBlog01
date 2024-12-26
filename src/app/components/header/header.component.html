@@ -1,0 +1,44 @@
+<header class="grid-padding-x">
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text" style="color: rgb(135, 229, 226)">
+          My awesome Blog
+        </li>
+        <li>
+          <a href="#">One</a>
+          <ul class="menu vertical">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        @if (isAuth) {
+        <li>
+          <button type="button" class="button tiny" style="margin-right: 5px">
+            Create Post
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button tiny">Sign-out</button>
+        </li>
+        } @else {
+        <li>
+          <button type="button" class="button tiny" style="margin-right: 5px">
+            Sign-in
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button tiny">Login</button>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</header>

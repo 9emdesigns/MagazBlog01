@@ -1,0 +1,21 @@
+<main class="grid-container full">
+  <section class="grid-x grid-padding-x large-up-2">
+    <div class="preview cell"><img [src]="postDetails.img" alt="" /></div>
+    <div class="cell">
+      <h1>{{ postDetails.title }}</h1>
+      <p>
+        <b>Author:</b><i>{{ postDetails.author }}</i>
+      </p>
+      <p>{{ postDetails.desc }}</p>
+      <div class="positionBtn">
+        @if(isAuthor){
+        <button mat-flat-button color="accent">edit</button>&nbsp;&nbsp;<button
+          mat-flat-button
+          color="warn"
+        >
+          delete</button
+        >}
+      </div>
+    </div>
+  </section>
+</main>
