@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<form #signup="ngForm" (ngSubmit)="checklogin()">
+  <div class="grid-container positionCard container">
+    <div
+      class="card middle"
+      style="height: 150px; width: 1000px; margin-top: 50px"
+    >
+      <h1>Login into Account</h1>
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="medium-4 cell">
+          <input
+            type="text"
+            name="username"
+            placeholder="you@yourdomain.com"
+            ngModel
+          />
+        </div>
+        <div class="medium-4 cell">
+          <input
+            type="password"
+            name="password"
+            placeholder="1234p@ssw0rd!!"
+            ngModel
+          />
+        </div>
+        <div class="medium-4 cell">
+          <button class="button" type="submit">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

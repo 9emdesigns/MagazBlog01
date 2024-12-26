@@ -1,0 +1,14 @@
+.container {
+  height: 75vh;
+  width: 1000px;
+  margin-top: 50px;
+}
+.positionCard {
+  display: flex;
+}
+.middle {
+  align-self: center;
+}
+.card h1 {
+  padding: 20px;
+}

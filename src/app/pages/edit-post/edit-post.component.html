@@ -1,1 +1,33 @@
-<p>edit-post works!</p>
+<form #editPost="ngForm" (ngSubmit)="editForm()">
+  <div class="grid-container positionCard container">
+    <div
+      class="card middle"
+      style="height: 150px; width: 1000px; margin-top: 50px"
+    >
+      <h1>Create Post</h1>
+      <div class="grid-x grid-padding-x align-center">
+        <div class="medium-8 cell">
+          <input
+            type="text"
+            name="title"
+            placeholder="your awesome title"
+            minlength="8"
+            ngModel
+          />
+          <textarea
+            type="text"
+            name="content"
+            placeholder="your awesome content"
+            rows="10"
+            ngModel
+          ></textarea>
+          <input type="text" name="author" placeholder="author name" />
+          <div class="medium-4 cell">
+            <input type="file" name="image" (change)="onFileSelect($event)" />
+          </div>
+          <button class="button" type="submit">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -15,6 +15,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { RouterModule } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatButtonModule } from '@angular/material/button';
     RouterModule,
     NgOptimizedImage,
     MatButtonModule,
+    FormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
