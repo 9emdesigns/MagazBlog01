@@ -1,0 +1,15 @@
+.menu,
+.top-bar {
+  background-color: rgb(228, 201, 168);
+  z-index: 2;
+}
+
+.menu a {
+  color: aquamarine;
+  font-size: 1.3em;
+}
+
+.is-dropdown-submenu-item a:hover {
+  color: rgb(82, 155, 131);
+  background-color: antiquewhite;
+}

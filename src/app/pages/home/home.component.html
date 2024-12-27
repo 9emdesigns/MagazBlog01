@@ -1,131 +1,49 @@
 <body>
-  <style>
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      max-width: 1900px;
-      gap: 20px;
-      margin: auto;
-    }
-
-    .sub {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: subgrid;
-      gap: 5px;
-      grid-column-end: auto;
-    }
-    .one {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .two {
-      border: 5px solid aqua;
-    }
-    .three {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .four {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .five {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .six {
-      border: 1px solid black;
-    }
-    .seven {
-      width: 193.5px;
-      height: 175px;
-    }
-    .eight {
-      width: 193.5px;
-      height: 175px;
-    }
-    .nine {
-      width: 193.5px;
-      height: 175px;
-    }
-    .ten {
-      width: 193.5px;
-      height: 175px;
-      background-color: aqua;
-    }
-    .eleven {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .twelve {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .thritheen {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .fourtheen {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .fiftheen {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .ninen {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .sevenn {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .eightn {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .tenn {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-    .elevenn {
-      border-right: 10px solid rgb(51, 241, 197);
-    }
-  </style>
-  <div class="wrapper">
-    <div class="one">
-      <img [src]="posts[posts.length - 1].img" alt="" />
+  <div class="container">
+    <div class="one result colorBGAqua">
+      <img [src]="posts[posts.length - 1].img" alt="" class="duotone" />
       <H2>{{ posts[posts.length - 1].title }}</H2>
       <p>{{ posts[posts.length - 1].desc }}</p>
       <p>
         <i
-          >{{ posts[posts.length - 1].date }}&nbsp;{{
-            posts[posts.length - 1].author
-          }}</i
+          >Published:&nbsp;{{ posts[posts.length - 1].date }}&nbsp;<b>
+            &nbsp;Author:&nbsp;{{ posts[posts.length - 1].author }}
+          </b></i
         >
       </p>
     </div>
     <div class="two">
       <div class="sub">
-        <div class="seven">One</div>
-        <div class="eight">Two</div>
-        <div class="nine">Three</div>
-        <div class="ten">Four</div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
       </div>
     </div>
-    <div class="three">
-      <img [src]="posts[posts.length - 2].img" alt="" />
+    <div class="three result colorBGAqua">
+      <img [src]="posts[posts.length - 2].img" alt="" class="duotone" />
       <H2>{{ posts[posts.length - 2].title }}</H2>
       <p>{{ posts[posts.length - 2].desc }}</p>
       <p>
         <i
-          >{{ posts[posts.length - 2].date }}&nbsp;{{
-            posts[posts.length - 2].author
-          }}</i
+          >Published:&nbsp;{{ posts[posts.length - 2].date }}&nbsp;<b
+            >&nbsp;Author:&nbsp;
+            {{ posts[posts.length - 2].author }}
+          </b></i
         >
       </p>
     </div>
-    <div class="four">4</div>
-    <div class="five">5</div>
-    <div class="sevenn">7</div>
-    <div class="eightn">8</div>
-    <div class="ninen">9</div>
-    <div class="tenn">10</div>
-    <div class="eleven">11</div>
-    <div class="twelve">12</div>
-    <div class="thritheen">13</div>
-    <div class="fourtheen">14</div>
-    <div class="fiftheen">15</div>
-    <div class="elevenn">16</div>
+    <div class="four result colorBGTurquoise">4</div>
+    <div class="five result colorBGTurquoise">5</div>
+    <div class="sevenn result colorBGAqua">7</div>
+    <div class="eightn result colorBGAqua">8</div>
+    <div class="ninen result colorBGAqua">9</div>
+    <div class="tenn result colorBGTurquoise">10</div>
+    <div class="eleven result colorBGTurquoise">11</div>
+    <div class="twelve result colorBGBlue">12</div>
+    <div class="thriteen result colorBGBlue">13</div>
+    <div class="fourteen result colorBGBlue">14</div>
+    <div class="fifthteen result colorBGBlue">15</div>
+    <div class="elevenn result colorBGBlue">16 test</div>
   </div>
 </body>

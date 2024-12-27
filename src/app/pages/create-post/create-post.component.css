@@ -13,3 +13,9 @@
 .card {
   height: 550px !important;
 }
+.card h1 {
+  font-size: 3em;
+  position: relative;
+  left: 177px;
+  margin: 20px 0;
+}
